@@ -2574,9 +2574,9 @@ define void print_body(mistakes) {
   	print "[", colors[1], "m/"
   	print "[", colors[2], "m┃"
   	print "[", colors[3], "m\\\n"
-  	print "[0m     ┃  "
+  	print "[0m     ┃ "
   	print "[", colors[4], "m/"
-  	print "[", colors[5], "m\\\n"
+  	print "[", colors[5], "m \\\n"
 	print "[0m   ━━┻━━━━"
 
 	print "[0m"
