@@ -2507,7 +2507,7 @@ define is_opened(c) {
 	auto i
 
 	for (i = 0; i < length(op[]); i++) {
-		if (op[i] == c)return 1;
+		if (op[i] == c) return 1;
 	}
 
 	return en[c]
@@ -2524,12 +2524,12 @@ define void print_keyboard() {
 }
 
 define void print_word(c, open) {
-	auto word, i
+	auto word, i, mod
 
 	scale=0
 	for (i = 0; c; i++) {
-		word[i] = c % 256
-		c /= 256
+		c = divmod(c, 256, mod[])
+		word[i] = mod[0]
 	}
 
 	while (i--) {
