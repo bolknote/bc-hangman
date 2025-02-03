@@ -1,4 +1,8 @@
-#!/usr/bin/env -S BC_LINE_LENGTH=0 bc -l -q
+#!/bin/bash
+x=/*
+BC_LINE_LENGTH=0 bc -l -q <(/usr/bin/seq -f "x=random()+%g" $RANDOM) "$0"
+exit; */1
+
 ibase=10
 obase=10
 
