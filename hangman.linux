@@ -2526,32 +2526,32 @@ define is_opened(c) {
 }
 
 define void print_letter(c) {
-    if(!--c){print"a";return}
-    if(!--c){print"b";return}
-    if(!--c){print"c";return}
-    if(!--c){print"d";return}
-    if(!--c){print"e";return}
-    if(!--c){print"f";return}
-    if(!--c){print"g";return}
-    if(!--c){print"h";return}
-    if(!--c){print"i";return}
-    if(!--c){print"j";return}
-    if(!--c){print"k";return}
-    if(!--c){print"l";return}
-    if(!--c){print"m";return}
-    if(!--c){print"n";return}
-    if(!--c){print"o";return}
-    if(!--c){print"p";return}
-    if(!--c){print"q";return}
-    if(!--c){print"r";return}
-    if(!--c){print"s";return}
-    if(!--c){print"t";return}
-    if(!--c){print"u";return}
-    if(!--c){print"v";return}
-    if(!--c){print"w";return}
-    if(!--c){print"x";return}
-    if(!--c){print"y";return}
-    if(!--c){print"z";return}
+    if(!--c){"a"}
+    if(!--c){"b"}
+    if(!--c){"c"}
+    if(!--c){"d"}
+    if(!--c){"e"}
+    if(!--c){"f"}
+    if(!--c){"g"}
+    if(!--c){"h"}
+    if(!--c){"i"}
+    if(!--c){"j"}
+    if(!--c){"k"}
+    if(!--c){"l"}
+    if(!--c){"m"}
+    if(!--c){"n"}
+    if(!--c){"o"}
+    if(!--c){"p"}
+    if(!--c){"q"}
+    if(!--c){"r"}
+    if(!--c){"s"}
+    if(!--c){"t"}
+    if(!--c){"u"}
+    if(!--c){"v"}
+    if(!--c){"w"}
+    if(!--c){"x"}
+    if(!--c){"y"}
+    if(!--c){"z"}
 }
 
 define void print_keyboard() {
@@ -2578,17 +2578,15 @@ define void print_word(c, open) {
     }
 
     while (i--) {
-        print "[44;97m"
+        print "[44;97m "
 
         if (open || op[i]) {
-            print " "
             print_letter(word[i])
-            print " "
         } else {
-            print "   "
+            print " "
         }
 
-        print "[0m "
+        print " [0m "
     }
 }
 
